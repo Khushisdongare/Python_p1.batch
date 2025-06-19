@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to top, #1b2735, #090a0f);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: sans-serif;
+}
+
+.launch-pad {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* Rocket styling */
+.rocket {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Launch animation */
+.rocket.launching {
+  animation: launch 1.2s ease-out forwards;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-100px);
+  }
+  60% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Example</title>
+</head>
+<body>
+
+  <h1>Accessibility Demo</h1>
+
+  <!-- Image with descriptive alt text -->
+  <img src="landscape.jpg" alt="Scenic landscape with mountains and a lake" width="400">
+
+  <br><br>
+
+  <!-- Form with labels for each input -->
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+
+  <!-- Navigation div with ARIA role -->
+  <div role="navigation" aria-label="Main menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .box {
+      border: 2px solid #555;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    /* Inline Elements Section */
+    .inline-section span,
+    .inline-section a,
+    .inline-section strong {
+      border: 2px dashed #007BFF;
+      margin: 5px;
+      padding: 5px;
+      display: inline;
+    }
+
+    /* Block Elements Section */
+    .block-section div,
+    .block-section p,
+    .block-section h1 {
+      border: 2px solid #FF5733;
+      margin: 5px 0;
+      padding: 10px;
+      display: block;
+    }
+
+    /* Bonus: Toggle display types */
+    .block-to-inline {
+      display: inline;
+      background-color: #f0f0f0;
+    }
+
+    .inline-to-block {
+      display: block;
+      background-color: #e0f7fa;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }

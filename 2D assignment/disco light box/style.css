@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disco-box {
+  width: 150px;
+  height: 150px;
+  background-color: #ff0044;
+  animation: discoSpin 4s linear infinite;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ff0044;
+}
+
+/* Keyframes for rotating and changing colors */
+@keyframes discoSpin {
+  0% {
+    transform: rotate(0deg);
+    background-color: #ff0044;
+    box-shadow: 0 0 20px #ff0044;
+  }
+  25% {
+    transform: rotate(90deg);
+    background-color: #00ff77;
+    box-shadow: 0 0 20px #00ff77;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: #0044ff;
+    box-shadow: 0 0 20px #0044ff;
+  }
+  75% {
+    transform: rotate(270deg);
+    background-color: #ffdd00;
+    box-shadow: 0 0 20px #ffdd00;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #ff0044;
+    box-shadow: 0 0 20px #ff0044;
+  }
+}

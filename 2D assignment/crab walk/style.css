@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #cceeff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Crab container */
+.crab {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  animation: crabWalk 4s ease-in-out infinite;
+}
+
+/* Claws */
+.claw {
+  width: 40px;
+  height: 40px;
+  background: #ff6f61;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+}
+
+/* Left claw rotation */
+.claw.left {
+  transform-origin: bottom right;
+  margin-right: 10px;
+  animation: clawWaveLeft 2s ease-in-out infinite;
+}
+
+/* Right claw rotation */
+.claw.right {
+  transform-origin: bottom left;
+  margin-left: 10px;
+  animation: clawWaveRight 2s ease-in-out infinite;
+}
+
+/* Crab body (emoji) */
+.body {
+  user-select: none;
+}
+
+/* Crab walking side to side */
+@keyframes crabWalk {
+  0%   { transform: translateX(0) rotate(0deg); }
+  25%  { transform: translateX(50px) rotate(10deg); }
+  50%  { transform: translateX(100px) rotate(0deg); }
+  75%  { transform: translateX(50px) rotate(-10deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+/* Claw waving animations */
+@keyframes clawWaveLeft {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(20deg); }
+}
+
+@keyframes clawWaveRight {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(-20deg); }
+}

@@ -1,0 +1,17 @@
+h1 {
+      text-align: justify;
+    }
+ .left {
+      text-align: left;
+    }
+.center {
+      text-align: center;
+    }
+.right {
+      text-align: right;
+    }
+ .note {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  

@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.mood-box {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  background-color: blue;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Add Mood Text */
+.mood-box::after {
+  content: "Calm and Cool";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Medium screen (tablets) */
+@media (max-width: 900px) {
+  .mood-box {
+    background-color: yellow;
+  }
+
+  .mood-box::after {
+    content: "Bright and Cheerful";
+    color: #333;
+  }
+}
+
+/* Small screen (phones) */
+@media (max-width: 600px) {
+  .mood-box {
+    background-color: rgb(22, 136, 189);
+  }
+
+  .mood-box::after {
+    content: "Bold and Energetic";
+    color: white;
+  }
+}

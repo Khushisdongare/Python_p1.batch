@@ -1,0 +1,21 @@
+/* Full-screen Flexbox layout */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+/* The lost box */
+.lost-box {
+  background-color: #ff6b6b;  /* bright background */
+  color: white;
+  padding: 30px 50px;
+  font-size: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}

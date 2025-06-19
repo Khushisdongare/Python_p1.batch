@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Block vs Inline</title>
+  <style>
+    .red-text {
+      color: red;
+    }
+    .blue-word {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    Block vs Inline Elements:
+    - Block elements (like <div>, <p>, <article>) start on a new line and take up the full width available.
+    - Inline elements (like <span>, <a>, <strong>) do not start on a new line and only take up as much width as needed.
+  -->
+
+  <!-- Block-level div with a red paragraph inside -->
+  <div>
+    <p class="red-text">This is a paragraph inside a div, and it is red.</p>
+  </div>
+
+  <!-- Paragraph with an inline span highlighting a word in blue -->
+  <p>
+    This sentence contains a <span class="blue-word">highlighted</span> word.
+  </p>
+
+</body>
+</html>

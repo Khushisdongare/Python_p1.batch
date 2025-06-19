@@ -1,0 +1,32 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* Flex container for cards */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Optional: adds consistent spacing between cards */
+}
+
+/* Individual card styling */
+.card {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}

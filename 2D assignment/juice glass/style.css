@@ -1,0 +1,41 @@
+/* Center everything */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+  font-family: sans-serif;
+}
+
+/* Glass container */
+.glass {
+  width: 120px;
+  height: 250px;
+  border: 4px solid #90caf9;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffffaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Juice that fills up */
+.juice {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ff9800, #ffb74d);
+  transform-origin: bottom;
+  transform: scaleY(0);
+  animation: fillUp 3s ease-in-out forwards;
+}
+
+/* Fill animation */
+@keyframes fillUp {
+  to {
+    transform: scaleY(1);
+  }
+}

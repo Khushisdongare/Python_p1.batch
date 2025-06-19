@@ -1,0 +1,17 @@
+.box {
+      height: 100px;
+      background-color: lightblue;
+      /* Apply margins that will collapse */
+      margin-bottom: 30px;
+      margin-top: 50px;
+    }
+
+    /* Add a border to visually separate the elements */
+    .box1 {
+      background-color: lightcoral;
+    }
+
+    .box2 {
+      background-color: lightgreen;
+    }
+  

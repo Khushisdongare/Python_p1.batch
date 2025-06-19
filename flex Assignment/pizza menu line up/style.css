@@ -1,0 +1,29 @@
+/* Centered and spaced pizza lineup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fff3e0;
+}
+
+.pizza-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffe0b2;
+  padding: 20px;
+  font-size: 1.2em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-menu a {
+  text-decoration: none;
+  color: #d84315;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.pizza-menu a:hover {
+  transform: scale(1.1);
+  color: #ff5722;
+}

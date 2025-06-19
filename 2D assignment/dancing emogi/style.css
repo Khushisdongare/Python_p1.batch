@@ -1,0 +1,26 @@
+/* Center the emoji */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff3e0;
+  font-family: sans-serif;
+}
+
+/* The dancing emoji */
+.dancer {
+  font-size: 5rem;
+  animation: dance 1s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Dance moves */
+@keyframes dance {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(15deg) scale(1.1); }
+  50%  { transform: rotate(0deg) scale(1); }
+  75%  { transform: rotate(-15deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}

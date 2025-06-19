@@ -1,0 +1,31 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8e1;
+  padding: 40px;
+}
+
+/* Default list style */
+.candy-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.candy-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* First child gets candy! 🍬 */
+.candy-list li:first-child {
+  background-color: #ffd54f;
+  color: #d84315;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.candy-list li:first-child::before {
+  content: "🍬 ";
+}
