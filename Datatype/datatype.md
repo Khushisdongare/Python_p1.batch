@@ -15,7 +15,7 @@ These store single values and are immutable.
 
 ```js
 let name = "Khushi";
-let age = 21;
+let age = 20;
 let isActive = true;
 ```
 
