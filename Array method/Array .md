@@ -8,9 +8,9 @@ let fruits = ["apple", "banana", "cherry"];
 
 ## Common Array Methods
 
-- `push()`, `pop()`
-- `shift()`, `unshift()`
-- `map()`, `filter()`, `reduce()`
+- push( ), pop( )
+- shift( ), unshift( )
+- map( ), filter( ), reduce( )
 - `forEach()`
 - `slice()`, `splice()`
 - `includes()`
